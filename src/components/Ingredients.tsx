@@ -2,46 +2,88 @@ import { motion } from "framer-motion";
 
 const items = [
   {
+    name: "Wood-Pressed Coconut Oil",
+    tag: "The Base",
+    desc: "Deeply nourishes the scalp and strengthens hair from root to tip.",
+    emoji: "🥥",
+    color: "oklch(0.88 0.06 90)",
+  },
+  {
     name: "Amla",
     tag: "Indian Gooseberry",
-    desc: "Vitamin-C rich fruit that strengthens follicles and preserves natural hair color.",
+    desc: "Rich in vitamin C — promotes hair growth and prevents premature greying.",
     emoji: "🫒",
     color: "oklch(0.75 0.14 130)",
   },
   {
-    name: "Tulsi",
-    tag: "Holy Basil",
-    desc: "Cools the scalp, calms irritation and fights dandruff at the root.",
-    emoji: "🌿",
-    color: "oklch(0.55 0.12 148)",
+    name: "Indigo",
+    tag: "Neela Amari",
+    desc: "Naturally enhances hair color and supports scalp health.",
+    emoji: "🪴",
+    color: "oklch(0.45 0.12 250)",
   },
   {
-    name: "Aloe Vera",
-    tag: "Ghritakumari",
-    desc: "Deep hydration and enzymes that revive dormant follicles.",
-    emoji: "🌵",
-    color: "oklch(0.72 0.14 145)",
+    name: "Brahmi",
+    tag: "Memory Herb",
+    desc: "Strengthens hair roots and helps reduce hair fall and stress-related damage.",
+    emoji: "🌿",
+    color: "oklch(0.58 0.11 150)",
+  },
+  {
+    name: "Henna",
+    tag: "Mehendi",
+    desc: "Conditions the hair, adds natural shine, and improves texture.",
+    emoji: "🍃",
+    color: "oklch(0.55 0.14 60)",
   },
   {
     name: "Hibiscus",
     tag: "Japa Pushpa",
-    desc: "Prevents premature graying and adds a natural, glossy shine.",
+    desc: "Stimulates hair growth and helps prevent dandruff and hair thinning.",
     emoji: "🌺",
     color: "oklch(0.62 0.20 25)",
   },
   {
+    name: "Tulsi",
+    tag: "Holy Basil",
+    desc: "Purifies the scalp and reduces itching and dandruff.",
+    emoji: "🌱",
+    color: "oklch(0.55 0.12 148)",
+  },
+  {
     name: "Bhringraj",
     tag: "King of Herbs",
-    desc: "Legendary Ayurvedic hair tonic — stimulates growth and reduces fall.",
-    emoji: "🍃",
+    desc: "The legendary Ayurvedic tonic — promotes thick, healthy growth.",
+    emoji: "🍀",
     color: "oklch(0.48 0.10 148)",
   },
   {
-    name: "Neem",
-    tag: "Nature's Purifier",
-    desc: "Antibacterial and antifungal — keeps the scalp clean and balanced.",
-    emoji: "🌱",
-    color: "oklch(0.58 0.11 140)",
+    name: "Aloe Vera",
+    tag: "Ghritakumari",
+    desc: "Soothes the scalp and hydrates dry, damaged hair.",
+    emoji: "🌵",
+    color: "oklch(0.72 0.14 145)",
+  },
+  {
+    name: "Little Ironweed",
+    tag: "Sahadevi",
+    desc: "Supports scalp health and helps in reducing hair loss.",
+    emoji: "🌾",
+    color: "oklch(0.60 0.10 135)",
+  },
+  {
+    name: "Curry Leaves",
+    tag: "Karivepaku",
+    desc: "Strengthens hair follicles and delays premature greying.",
+    emoji: "🌿",
+    color: "oklch(0.52 0.13 140)",
+  },
+  {
+    name: "Vetiver",
+    tag: "Khus",
+    desc: "Cools and calms the scalp while improving overall hair vitality.",
+    emoji: "🌾",
+    color: "oklch(0.55 0.09 100)",
   },
 ];
 
@@ -52,10 +94,10 @@ export default function Ingredients() {
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs uppercase tracking-[0.3em] text-[color:var(--leaf)]">The Formula</span>
           <h2 className="mt-4 text-4xl sm:text-5xl">
-            Nine herbs. <em className="text-[color:var(--leaf)]">One ritual.</em>
+            Twelve herbs. <em className="text-[color:var(--leaf)]">One ritual.</em>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Slow-infused for weeks in cold-pressed coconut oil — never heated, never diluted.
+            Slow-infused for weeks in wood-pressed coconut oil — never heated, never diluted.
           </p>
         </div>
 
@@ -66,7 +108,7 @@ export default function Ingredients() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.6, delay: i * 0.08 }}
+              transition={{ duration: 0.6, delay: i * 0.06 }}
               whileHover={{ y: -8, rotateX: 4, rotateY: -4 }}
               style={{ transformPerspective: 1000 }}
               className="group relative overflow-hidden rounded-3xl bg-card p-8 shadow-soft transition-shadow hover:shadow-bottle"
