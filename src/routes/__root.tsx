@@ -83,13 +83,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Handcrafted Ayurvedic hair oil slow-infused with Amla, Tulsi, Aloe Vera, Hibiscus & Bhringraj. 100% natural, made with love in Calicut, Kerala.",
       },
-      { property: "og:title", content: "Prakrithi Roots — Nature's Healing Power" },
+      { property: "og:title", content: "Prakrithi Roots — Ayurvedic Herbal Hair Oil from Kerala" },
       {
         property: "og:description",
         content: "100% natural herbal hair oil, slow-infused in pure coconut oil. Rooted in Kerala.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Prakrithi Roots — Ayurvedic Herbal Hair Oil from Kerala" },
+      { name: "description", content: "Handcrafted Ayurvedic hair oil slow-infused with Amla, Tulsi, Aloe Vera, Hibiscus & Bhringraj. 100% natural, made with love in Calicut, Kerala." },
+      { property: "og:description", content: "Handcrafted Ayurvedic hair oil slow-infused with Amla, Tulsi, Aloe Vera, Hibiscus & Bhringraj. 100% natural, made with love in Calicut, Kerala." },
+      { name: "twitter:description", content: "Handcrafted Ayurvedic hair oil slow-infused with Amla, Tulsi, Aloe Vera, Hibiscus & Bhringraj. 100% natural, made with love in Calicut, Kerala." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5a36b7d0-ff1d-4711-beb6-2c3ef75b2ea9/id-preview-fb4b32ae--cf78b4cd-93a7-4401-9ac0-eb5b554d8685.lovable.app-1783140056942.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5a36b7d0-ff1d-4711-beb6-2c3ef75b2ea9/id-preview-fb4b32ae--cf78b4cd-93a7-4401-9ac0-eb5b554d8685.lovable.app-1783140056942.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
