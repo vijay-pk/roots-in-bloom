@@ -20,12 +20,14 @@ export default function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled ? "py-3" : "py-6"
+        scrolled ? "py-2 sm:py-3" : "py-3 sm:py-6"
       }`}
     >
       <nav
-        className={`mx-auto flex max-w-6xl items-center justify-between rounded-full px-6 py-3 transition-all duration-500 ${
-          scrolled ? "glass shadow-soft" : "bg-transparent"
+        className={`mx-auto flex max-w-6xl items-center justify-between rounded-full px-4 py-2.5 transition-all duration-500 sm:px-6 sm:py-3 ${
+          scrolled
+            ? "glass shadow-soft mx-3 sm:mx-auto"
+            : "bg-transparent"
         }`}
       >
         <a href="#top" className="flex items-center gap-2 group">

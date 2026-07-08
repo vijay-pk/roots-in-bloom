@@ -9,7 +9,7 @@ const reviews = [
 
 export default function Testimonials() {
   return (
-    <section id="reviews" className="relative py-32">
+    <section id="reviews" className="relative py-20 sm:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center">
           <span className="text-xs uppercase tracking-[0.3em] text-[color:var(--leaf)]">Loved by</span>

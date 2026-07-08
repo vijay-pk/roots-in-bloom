@@ -12,7 +12,7 @@ const faqs = [
 export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
   return (
-    <section id="faq" className="relative py-32">
+    <section id="faq" className="relative py-20 sm:py-32">
       <div className="mx-auto max-w-3xl px-6">
         <div className="text-center">
           <span className="text-xs uppercase tracking-[0.3em] text-[color:var(--leaf)]">Questions</span>

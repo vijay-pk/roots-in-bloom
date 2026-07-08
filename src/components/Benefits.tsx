@@ -11,15 +11,15 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section id="benefits" className="relative py-32">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2">
+    <section id="benefits" className="relative py-20 sm:py-32">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-6 sm:gap-16 lg:grid-cols-2">
         {/* Sticky bottle */}
         <div className="relative flex justify-center lg:sticky lg:top-32">
-          <div className="absolute h-80 w-80 rounded-full gradient-leaf opacity-20 blur-3xl" />
+          <div className="absolute h-56 w-56 rounded-full gradient-leaf opacity-20 blur-3xl sm:h-80 sm:w-80" />
           <motion.img
             src={bottle.url}
             alt="Prakrithi Roots bottle"
-            className="relative h-[480px] w-auto object-contain animate-float-bottle"
+            className="relative h-[280px] w-auto object-contain animate-float-bottle sm:h-[400px] lg:h-[480px]"
             style={{ filter: "drop-shadow(0 40px 40px oklch(0.30 0.07 148 / 0.5))" }}
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}

@@ -21,10 +21,10 @@ export default function Hero() {
   }, [mx, my]);
 
   return (
-    <section id="top" className="relative min-h-screen overflow-hidden pt-28 animate-bg-shift">
+    <section id="top" className="relative min-h-screen overflow-hidden pt-20 sm:pt-28 animate-bg-shift">
       <FloatingLeaves />
 
-      <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-6 pb-16 lg:grid-cols-2 lg:gap-4">
+      <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-6 px-6 pb-16 sm:gap-8 lg:grid-cols-2 lg:gap-4">
         {/* Copy */}
         <div className="relative z-10 text-center lg:text-left">
           <motion.div
@@ -41,7 +41,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.15 }}
-            className="mt-6 text-5xl leading-[1.02] text-balance sm:text-6xl lg:text-7xl"
+            className="mt-5 text-4xl leading-[1.05] text-balance sm:text-6xl lg:text-7xl"
           >
             Nature's
             <span className="block italic text-[color:var(--leaf)]">healing power,</span>
@@ -66,14 +66,14 @@ export default function Hero() {
           >
             <a
               href="#shop"
-              className="group relative overflow-hidden rounded-full gradient-leaf px-8 py-4 text-sm font-medium text-[color:var(--cream)] shadow-bottle transition-transform hover:scale-105"
+              className="group relative overflow-hidden rounded-full gradient-leaf px-7 py-3.5 text-sm font-medium text-[color:var(--cream)] shadow-bottle transition-transform hover:scale-105 sm:px-8 sm:py-4"
             >
               <span className="relative z-10">Shop Now — ₹325</span>
               <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
             </a>
             <a
               href="#story"
-              className="rounded-full glass px-8 py-4 text-sm font-medium text-[color:var(--leaf)] transition hover:bg-white/70"
+              className="rounded-full glass px-7 py-3.5 text-sm font-medium text-[color:var(--leaf)] transition hover:bg-white/70 sm:px-8 sm:py-4"
             >
               Discover the story →
             </a>
@@ -94,15 +94,15 @@ export default function Hero() {
         {/* Bottle */}
         <motion.div
           style={{ rotateX: rx, rotateY: ry, transformPerspective: 1200 }}
-          className="relative mx-auto flex h-[560px] w-full items-center justify-center"
+          className="relative mx-auto flex h-[340px] w-full items-center justify-center sm:h-[460px] lg:h-[560px]"
         >
           {/* Glow disc */}
-          <div className="absolute h-[420px] w-[420px] rounded-full bg-[radial-gradient(circle,oklch(0.72_0.13_148/0.35),transparent_70%)] blur-2xl" />
+          <div className="absolute h-[280px] w-[280px] rounded-full bg-[radial-gradient(circle,oklch(0.72_0.13_148/0.35),transparent_70%)] blur-2xl sm:h-[380px] sm:w-[380px] lg:h-[420px] lg:w-[420px]" />
           {/* Rotating ring */}
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-            className="absolute h-[440px] w-[440px] rounded-full border border-dashed border-[color:var(--leaf)]/25"
+            className="absolute h-[300px] w-[300px] rounded-full border border-dashed border-[color:var(--leaf)]/25 sm:h-[400px] sm:w-[400px] lg:h-[440px] lg:w-[440px]"
           />
           <div
             className="animate-float-bottle relative"
@@ -111,7 +111,7 @@ export default function Hero() {
             <img
               src={bottle.url}
               alt="Prakrithi Roots Herbal Hair Oil bottle"
-              className="relative z-10 h-[520px] w-auto object-contain"
+              className="relative z-10 h-[300px] w-auto object-contain sm:h-[420px] lg:h-[520px]"
               loading="eager"
             />
           </div>
