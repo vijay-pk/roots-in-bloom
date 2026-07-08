@@ -44,7 +44,7 @@ export default function Footer() {
             <h4 className="text-xs uppercase tracking-widest text-white/50">Contact</h4>
             <ul className="mt-4 space-y-2 text-sm">
               <li>Loventra, Calicut, Kerala</li>
-              <li><a href="mailto:prakrithiroots2026@gmail.com" className="hover:text-white">prakrithiroots2026@gmail.com</a></li>
+              <li><a href="mailto:prakrithiroots@gmail.com" className="hover:text-white">prakrithiroots@gmail.com</a></li>
               <li>
                 <a href="https://amzn.in/d/03o8vO5r" target="_blank" rel="noreferrer" className="hover:text-white">
                   Buy on Amazon →
