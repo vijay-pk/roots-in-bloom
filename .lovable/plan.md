@@ -1,10 +1,8 @@
-I can’t manually push from this chat because Lovable manages git sync internally.
+Since GitHub is already connected, Lovable auto-syncs every change to your repo — there's no manual push step. Your recent edits (Ingredients update, etc.) should already be on GitHub.
 
-To push now:
-1. Open the chat input Plus (+) menu.
-2. Choose GitHub.
-3. Click Connect project or Manage project.
-4. Authorize/select your GitHub account.
-5. Create/connect the repository.
+If you don't see them:
+1. Refresh your GitHub repo page
+2. Check the correct branch (usually `main`)
+3. Open Plus (+) → GitHub → verify the connected repo
 
-After it’s connected, Lovable automatically pushes the latest project changes to GitHub and keeps syncing future changes both ways.
+Want me to do anything in the app itself?
