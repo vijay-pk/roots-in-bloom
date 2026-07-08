@@ -1,12 +1,10 @@
-## Goal
-Remove the white background from the product bottle image so it blends naturally into the cream/gradient backgrounds across the site (Hero, Benefits, Shop CTA).
+I can’t manually push from this chat because Lovable manages git sync internally.
 
-## Steps
-1. Run `imagegen--edit_image` on the current bottle asset (`src/assets/bottle.asset.json` → CDN URL) with `transparent_background: true`, saving to `src/assets/bottle.png`.
-2. Upload the resulting transparent PNG via `lovable-assets create` and overwrite `src/assets/bottle.asset.json` with the new pointer.
-3. Delete the temporary local `bottle.png` after upload so no binary lives in the repo.
-4. No component changes needed — `Hero.tsx`, `Benefits.tsx`, and `ShopCTA.tsx` already import from `bottle.asset.json`.
+To push now:
+1. Open the chat input Plus (+) menu.
+2. Choose GitHub.
+3. Click Connect project or Manage project.
+4. Authorize/select your GitHub account.
+5. Create/connect the repository.
 
-## Notes
-- The current `drop-shadow` filters will now cast off the actual bottle silhouette instead of a white rectangle — that's the desired effect.
-- Old CDN asset will be replaced; no code references break because the pointer file path stays the same.
+After it’s connected, Lovable automatically pushes the latest project changes to GitHub and keeps syncing future changes both ways.
