@@ -77,25 +77,62 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Prakrithi Roots — Ayurvedic Herbal Hair Oil from Kerala" },
+      { title: "Prakrithi Roots — Natural Ayurvedic Hair Oil | Buy on Amazon" },
       {
         name: "description",
         content:
-          "Handcrafted Ayurvedic hair oil slow-infused with Amla, Tulsi, Aloe Vera, Hibiscus & Bhringraj. 100% natural, made with love in Calicut, Kerala.",
+          "Prakrithi Roots is a 100% natural Ayurvedic hair oil handcrafted in Kerala with Amla, Tulsi, Aloe Vera, Hibiscus & Bhringraj. Best natural hair oil for hair growth — buy on Amazon India.",
       },
-      { property: "og:title", content: "Prakrithi Roots — Ayurvedic Herbal Hair Oil from Kerala" },
+      {
+        name: "keywords",
+        content:
+          "prakrithi roots, prakrithi roots hair oil, natural hair oil, best hair oil, hair oil in amazon, ayurvedic hair oil, herbal hair oil, hair oil for hair growth, kerala hair oil, amla hair oil, bhringraj oil, hibiscus hair oil, coconut hair oil, chemical free hair oil, organic hair oil india",
+      },
+      { name: "author", content: "Prakrithi Roots" },
+      { name: "robots", content: "index, follow" },
+      { name: "theme-color", content: "#2E5E3B" },
+      { property: "og:title", content: "Prakrithi Roots — Natural Ayurvedic Hair Oil | Buy on Amazon" },
       {
         property: "og:description",
-        content: "100% natural herbal hair oil, slow-infused in pure coconut oil. Rooted in Kerala.",
+        content:
+          "Handcrafted Ayurvedic hair oil slow-infused with 12 herbs in pure coconut oil. 100% natural, made in Kerala. Available on Amazon India.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://prakrithi-roots.shop" },
+      { property: "og:site_name", content: "Prakrithi Roots" },
+      { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Prakrithi Roots — Ayurvedic Herbal Hair Oil from Kerala" },
-      { name: "description", content: "Handcrafted Ayurvedic hair oil slow-infused with Amla, Tulsi, Aloe Vera, Hibiscus & Bhringraj. 100% natural, made with love in Calicut, Kerala." },
-      { property: "og:description", content: "Handcrafted Ayurvedic hair oil slow-infused with Amla, Tulsi, Aloe Vera, Hibiscus & Bhringraj. 100% natural, made with love in Calicut, Kerala." },
-      { name: "twitter:description", content: "Handcrafted Ayurvedic hair oil slow-infused with Amla, Tulsi, Aloe Vera, Hibiscus & Bhringraj. 100% natural, made with love in Calicut, Kerala." },
+      { name: "twitter:title", content: "Prakrithi Roots — Natural Ayurvedic Hair Oil | Buy on Amazon" },
+      {
+        name: "twitter:description",
+        content:
+          "Handcrafted Ayurvedic hair oil slow-infused with 12 herbs in pure coconut oil. 100% natural, made in Kerala.",
+      },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5a36b7d0-ff1d-4711-beb6-2c3ef75b2ea9/id-preview-fb4b32ae--cf78b4cd-93a7-4401-9ac0-eb5b554d8685.lovable.app-1783140056942.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5a36b7d0-ff1d-4711-beb6-2c3ef75b2ea9/id-preview-fb4b32ae--cf78b4cd-93a7-4401-9ac0-eb5b554d8685.lovable.app-1783140056942.png" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: "Prakrithi Roots Ayurvedic Herbal Hair Oil",
+          image: "https://prakrithi-roots.shop/bottle.png",
+          description:
+            "100% natural Ayurvedic hair oil slow-infused with 12 herbs including Amla, Tulsi, Aloe Vera, Hibiscus and Bhringraj in pure wood-pressed coconut oil. Handcrafted in Kerala.",
+          brand: { "@type": "Brand", name: "Prakrithi Roots" },
+          category: "Hair Oil",
+          countryOfOrigin: "India",
+          offers: {
+            "@type": "Offer",
+            url: "https://amzn.in/d/03o8vO5r",
+            priceCurrency: "INR",
+            price: "325",
+            availability: "https://schema.org/InStock",
+          },
+        }),
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
