@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Story() {
   const words = "Rooted in Kerala. Grown from grandmother's recipes. Bottled with intention.".split(" ");
   return (
-    <section id="story" className="relative py-32">
+    <section id="story" className="relative py-20 sm:py-32">
       <div className="mx-auto max-w-4xl px-6 text-center">
         <span className="text-xs uppercase tracking-[0.3em] text-[color:var(--leaf)]">Our Story</span>
         <h2 className="mt-6 font-display text-4xl leading-tight text-balance sm:text-6xl">
