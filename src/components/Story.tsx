@@ -39,7 +39,7 @@ export default function Story() {
 
         <div className="mt-16 grid grid-cols-2 gap-6 sm:grid-cols-4">
           {[
-            { k: "9", v: "Herbs" },
+            { k: "12", v: "Herbs" },
             { k: "100%", v: "Natural" },
             { k: "0", v: "Chemicals" },
             { k: "3wk", v: "Slow-infused" },
