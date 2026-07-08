@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import bottle from "@/assets/bottle.asset.json";
+const bottle = { url: "/bottle.png" };
 
 export default function ShopCTA() {
   return (

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import bottle from "@/assets/bottle.asset.json";
+const bottle = { url: "/bottle.png" };
 
 const benefits = [
   { title: "Hair Growth Support", desc: "Awakens dormant follicles with Bhringraj + Amla." },
