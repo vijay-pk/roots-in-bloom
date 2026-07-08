@@ -65,7 +65,9 @@ export default function Hero() {
             className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start"
           >
             <a
-              href="#shop"
+              href="https://amzn.in/d/03o8vO5r"
+              target="_blank"
+              rel="noreferrer"
               className="group relative overflow-hidden rounded-full gradient-leaf px-7 py-3.5 text-sm font-medium text-[color:var(--cream)] shadow-bottle transition-transform hover:scale-105 sm:px-8 sm:py-4"
             >
               <span className="relative z-10">Shop Now — ₹325</span>
