@@ -34,7 +34,7 @@ export default function ShopCTA() {
                   Buy on Amazon — ₹325
                 </a>
                 <a
-                  href="mailto:prakrithiroots2026@gmail.com"
+                  href="mailto:prakrithiroots@gmail.com"
                   className="rounded-full border border-white/40 px-6 py-3.5 text-sm font-medium text-white/90 transition hover:bg-white/10 sm:px-8 sm:py-4"
                 >
                   Contact us
