@@ -51,7 +51,9 @@ export default function Navbar() {
           ))}
         </ul>
         <a
-          href="#shop"
+          href="https://amzn.in/d/03o8vO5r"
+          target="_blank"
+          rel="noreferrer"
           className="rounded-full gradient-leaf px-5 py-2 text-sm font-medium text-[color:var(--cream)] shadow-soft transition-transform hover:scale-105"
         >
           Shop Now
