@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect } from "react";
-import bottle from "@/assets/bottle.asset.json";
+const bottle = { url: "/bottle.png" };
 import FloatingLeaves from "./FloatingLeaves";
 
 export default function Hero() {
