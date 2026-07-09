@@ -98,7 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Handcrafted Ayurvedic hair oil slow-infused with 12 herbs in pure coconut oil. 100% natural, made in Kerala. Available on Amazon India.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://prakrithi-roots.shop" },
+      { property: "og:url", content: "https://roots-in-bloom.lovable.app" },
       { property: "og:site_name", content: "Prakrithi Roots" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -118,7 +118,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@context": "https://schema.org",
           "@type": "Product",
           name: "Prakrithi Roots Ayurvedic Herbal Hair Oil",
-          image: "https://prakrithi-roots.shop/bottle.png",
+          image: "https://roots-in-bloom.lovable.app/bottle.png",
           description:
             "100% natural Ayurvedic hair oil slow-infused with 12 herbs including Amla, Tulsi, Aloe Vera, Hibiscus and Bhringraj in pure wood-pressed coconut oil. Handcrafted in Kerala.",
           brand: { "@type": "Brand", name: "Prakrithi Roots" },
@@ -137,7 +137,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
-      { rel: "canonical", href: "https://prakrithi-roots.shop/" },
+      { rel: "canonical", href: "https://roots-in-bloom.lovable.app/" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
