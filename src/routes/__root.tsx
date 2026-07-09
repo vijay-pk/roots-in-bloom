@@ -86,7 +86,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "keywords",
         content:
-          "prakrithi roots, prakrithi roots hair oil, natural hair oil, best hair oil, hair oil in amazon, ayurvedic hair oil, herbal hair oil, hair oil for hair growth, kerala hair oil, amla hair oil, bhringraj oil, hibiscus hair oil, coconut hair oil, chemical free hair oil, organic hair oil india",
+          "prakrithi roots, natural hair oil, best hair oil, hair oil in amazon, ayurvedic hair oil, herbal hair oil, hair oil for hair growth, kerala hair oil, amla hair oil, bhringraj oil, hibiscus hair oil, coconut hair oil, chemical free hair oil, organic hair oil india",
       },
       { name: "author", content: "Prakrithi Roots" },
       { name: "robots", content: "index, follow" },
