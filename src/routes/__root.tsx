@@ -128,7 +128,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             "@type": "Offer",
             url: "https://amzn.in/d/03o8vO5r",
             priceCurrency: "INR",
-            price: "325",
+            price: "299",
             availability: "https://schema.org/InStock",
           },
         }),

@@ -31,7 +31,7 @@ export default function ShopCTA() {
                   rel="noreferrer"
                   className="rounded-full bg-[color:var(--cream)] px-6 py-3.5 text-sm font-medium text-[color:var(--leaf)] shadow-soft transition-transform hover:scale-105 sm:px-8 sm:py-4"
                 >
-                  Buy on Amazon — ₹325
+                  Buy on Amazon — ₹299
                 </a>
                 <a
                   href="mailto:prakrithiroots@gmail.com"
