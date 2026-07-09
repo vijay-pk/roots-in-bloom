@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://prakrithi-roots.shop/sitemap.xml
+Sitemap: https://roots-in-bloom.lovable.app/sitemap.xml
