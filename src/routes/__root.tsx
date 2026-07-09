@@ -118,7 +118,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@context": "https://schema.org",
           "@type": "Product",
           name: "Prakrithi Roots Ayurvedic Herbal Hair Oil",
-          image: "https://prakrithi-roots.shop/bottle.png",
+          image: "https://roots-in-bloom.lovable.app/bottle.png",
           description:
             "100% natural Ayurvedic hair oil slow-infused with 12 herbs including Amla, Tulsi, Aloe Vera, Hibiscus and Bhringraj in pure wood-pressed coconut oil. Handcrafted in Kerala.",
           brand: { "@type": "Brand", name: "Prakrithi Roots" },
