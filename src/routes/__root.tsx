@@ -98,7 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Handcrafted Ayurvedic hair oil slow-infused with 12 herbs in pure coconut oil. 100% natural, made in Kerala. Available on Amazon India.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://prakrithi-roots.shop" },
+      { property: "og:url", content: "https://roots-in-bloom.lovable.app" },
       { property: "og:site_name", content: "Prakrithi Roots" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
