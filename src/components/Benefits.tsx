@@ -60,6 +60,11 @@ export default function Benefits() {
               </motion.li>
             ))}
           </ul>
+          <div className="mt-10">
+            <a href="/#shop" className="inline-flex items-center gap-3 rounded-full glass px-8 py-4 text-sm font-medium text-[color:var(--leaf)] shadow-soft transition hover:bg-white/70 hover:scale-105">
+              View Product <span aria-hidden>→</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

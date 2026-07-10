@@ -33,20 +33,25 @@ export default function Footer() {
           <div>
             <h4 className="text-xs uppercase tracking-widest text-white/50">Explore</h4>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><a href="#story" className="hover:text-white">Our Story</a></li>
-              <li><a href="#ingredients" className="hover:text-white">Ingredients</a></li>
-              <li><a href="#benefits" className="hover:text-white">Benefits</a></li>
-              <li><a href="#faq" className="hover:text-white">FAQ</a></li>
+              <li><a href="/about" className="hover:text-white transition">Our Story</a></li>
+              <li><a href="/ingredients" className="hover:text-white transition">Ingredients</a></li>
+              <li><a href="/benefits" className="hover:text-white transition">Benefits</a></li>
+              <li><a href="/how-to-use" className="hover:text-white transition">How to Use</a></li>
+              <li><a href="/faq" className="hover:text-white transition">FAQ</a></li>
+              <li><a href="/blogs" className="hover:text-white transition">Blog</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs uppercase tracking-widest text-white/50">Contact</h4>
+            <h4 className="text-xs uppercase tracking-widest text-white/50">Contact & Legal</h4>
             <ul className="mt-4 space-y-2 text-sm">
-              <li>Loventra, Calicut, Kerala</li>
-              <li><a href="mailto:prakrithiroots@gmail.com" className="hover:text-white">prakrithiroots@gmail.com</a></li>
-              <li>
-                <a href="https://www.amazon.in/Prakrithi-Roots-Herbal-Hair-Oil/dp/B0H74RD947" target="_blank" rel="noreferrer" className="hover:text-white">
+              <li><a href="mailto:prakrithiroots@gmail.com" className="hover:text-white transition">prakrithiroots@gmail.com</a></li>
+              <li><a href="/contact" className="hover:text-white transition">Contact Us</a></li>
+              <li><a href="/privacy-policy" className="hover:text-white transition">Privacy Policy</a></li>
+              <li><a href="/shipping-policy" className="hover:text-white transition">Shipping Policy</a></li>
+              <li><a href="/refund-policy" className="hover:text-white transition">Refund Policy</a></li>
+              <li className="pt-4">
+                <a href="https://www.amazon.in/Prakrithi-Roots-Herbal-Hair-Oil/dp/B0H74RD947" target="_blank" rel="noreferrer" className="inline-block rounded-full bg-[color:var(--cream)] px-5 py-2 text-[color:var(--leaf)] font-medium shadow-soft transition hover:scale-105">
                   Buy on Amazon →
                 </a>
               </li>

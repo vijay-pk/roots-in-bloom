@@ -15,7 +15,10 @@ function BlogsPage() {
         </p>
         <div className="glass p-12 rounded-2xl">
           <h2 className="text-2xl font-medium mb-4 text-[color:var(--leaf)]">Coming Soon!</h2>
-          <p className="text-muted-foreground">We are currently writing beautiful articles for you. Check back soon for our first post!</p>
+          <p className="text-muted-foreground mb-8">We are currently writing beautiful articles for you. Check back soon for our first post!</p>
+          <a href="/benefits" className="inline-block rounded-full gradient-leaf px-8 py-3 text-sm font-medium text-[color:var(--cream)] transition hover:scale-105 shadow-soft">
+            Discover our Benefits
+          </a>
         </div>
       </div>
     </PageLayout>
