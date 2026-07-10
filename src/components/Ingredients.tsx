@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "@tanstack/react-router";
 
 const items = [
   {
@@ -130,6 +131,15 @@ export default function Ingredients() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-16 flex justify-center">
+          <Link
+            to="/ingredients"
+            className="inline-flex items-center gap-2 rounded-full border border-[color:var(--leaf)] px-8 py-3.5 text-sm font-medium text-[color:var(--leaf)] transition hover:bg-[color:var(--leaf)] hover:text-[color:var(--cream)] shadow-sm"
+          >
+            Learn More About Our Ingredients
+          </Link>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "@tanstack/react-router";
 const bottle = { url: "/bottle.png" };
 
 const benefits = [
@@ -61,10 +62,16 @@ export default function Benefits() {
               </motion.li>
             ))}
           </ul>
-          <div className="mt-10">
+          <div className="mt-10 flex flex-wrap gap-4">
             <a href="/#shop" className="inline-flex items-center gap-3 rounded-full glass px-8 py-4 text-sm font-medium text-[color:var(--leaf)] shadow-soft transition hover:bg-white/70 hover:scale-105">
               View Product <span aria-hidden>→</span>
             </a>
+            <Link
+              to="/benefits"
+              className="inline-flex items-center gap-2 rounded-full border border-[color:var(--leaf)] px-8 py-4 text-sm font-medium text-[color:var(--leaf)] transition hover:bg-[color:var(--leaf)] hover:text-[color:var(--cream)] shadow-sm"
+            >
+              See All Benefits
+            </Link>
           </div>
         </div>
       </div>

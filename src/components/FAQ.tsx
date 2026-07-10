@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 
 const faqs = [
@@ -56,6 +57,15 @@ export default function FAQ() {
               </div>
             );
           })}
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <Link
+            to="/faq"
+            className="inline-flex items-center gap-2 rounded-full border border-[color:var(--leaf)] px-8 py-3.5 text-sm font-medium text-[color:var(--leaf)] transition hover:bg-[color:var(--leaf)] hover:text-[color:var(--cream)] shadow-sm"
+          >
+            Read All FAQs
+          </Link>
         </div>
       </div>
     </section>
