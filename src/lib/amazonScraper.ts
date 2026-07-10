@@ -3,7 +3,11 @@ import { createServerFn } from "@tanstack/react-start";
 export const getAmazonPrice = createServerFn({ method: "GET" }).handler(async () => {
   const fallbackPrice = "299";
   try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 800);
+
     const response = await fetch("https://www.amazon.in/Prakrithi-Roots-Herbal-Hair-Oil/dp/B0H74RD947", {
+      signal: controller.signal,
       headers: {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
         "Accept-Language": "en-US,en;q=0.9",
@@ -11,6 +15,8 @@ export const getAmazonPrice = createServerFn({ method: "GET" }).handler(async ()
       },
       next: { revalidate: 3600 }
     } as any);
+
+    clearTimeout(timeoutId);
 
     if (!response.ok) {
       console.warn("Amazon request failed with status:", response.status);
