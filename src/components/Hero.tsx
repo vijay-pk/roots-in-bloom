@@ -2,6 +2,7 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect } from "react";
 const bottle = { url: "/bottle.png" };
 import FloatingLeaves from "./FloatingLeaves";
+import { PRODUCT_PRICE } from "../lib/config";
 
 export default function Hero() {
   const mx = useMotionValue(0);
@@ -69,7 +70,7 @@ export default function Hero() {
               rel="noreferrer"
               className="group relative overflow-hidden rounded-full gradient-leaf px-7 py-3.5 text-sm font-medium text-[color:var(--cream)] shadow-bottle transition-transform hover:scale-105 sm:px-8 sm:py-4"
             >
-              <span className="relative z-10">Shop Now — ₹299</span>
+              <span className="relative z-10">Shop Now — ₹{PRODUCT_PRICE}</span>
               <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
             </a>
             <a
