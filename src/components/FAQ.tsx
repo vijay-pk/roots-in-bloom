@@ -5,6 +5,10 @@ const faqs = [
   { q: "How often should I use Prakrithi Roots?", a: "Two to three times a week. Apply on scalp, massage for 2–3 minutes, leave for 30 minutes and wash off with a mild shampoo." },
   { q: "Is it suitable for all hair types?", a: "Yes. The formula is balanced for men and women, curly to straight, oily to dry scalps." },
   { q: "When will I see results?", a: "Most customers notice reduced hair fall and a calmer scalp within 3–4 weeks of consistent use." },
+  { q: "What makes this the best Ayurvedic hair oil for hair fall?", a: "Our traditional slow-infusion process ensures the active compounds from Amla, Bhringraj, and Hibiscus are fully extracted into pure wood-pressed coconut oil, creating a potent natural remedy for hair fall and scalp health." },
+  { q: "Does it contain any chemicals or artificial fragrances?", a: "Absolutely not. Prakrithi Roots is a 100% natural, chemical-free hair oil. We never use parabens, sulfates, silicones, mineral oil, or synthetic fragrances." },
+  { q: "Can I use this oil if I have dandruff?", a: "Yes, ingredients like Aloe Vera and Tulsi possess natural antibacterial and soothing properties that help maintain a healthy, flake-free scalp." },
+  { q: "Is it safe for chemically treated or colored hair?", a: "Yes, being 100% natural and free from harsh chemicals, it is perfectly safe to use on colored or treated hair. In fact, it deeply nourishes and repairs damaged hair strands." },
   { q: "What's inside — and what's not?", a: "Coconut oil, Amla, Indigo, Bhringraj, Brahmi, Hibiscus, Aloe Vera, Henna, Tulsi, Curry leaves & other natural herbs. No parabens, no silicones, no mineral oil, no artificial colors." },
   { q: "Where is it made?", a: "Slow-infused and bottled by Loventra in Calicut, Kerala, India." },
 ];
