@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "@tanstack/react-router";
 
 export default function Story() {
   const words = "Rooted in Kerala. Grown from grandmother's recipes. Bottled with intention.".split(" ");
@@ -36,6 +37,21 @@ export default function Story() {
           Prakrithi Roots keeps that ritual alive — no shortcuts, no synthetics, just the slow
           patience of nature.
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="mt-10 flex justify-center"
+        >
+          <Link
+            to="/about"
+            className="inline-flex items-center gap-2 rounded-full border border-[color:var(--leaf)] px-8 py-3.5 text-sm font-medium text-[color:var(--leaf)] transition hover:bg-[color:var(--leaf)] hover:text-[color:var(--cream)] shadow-sm"
+          >
+            Read Our Founder's Story
+          </Link>
+        </motion.div>
 
         <div className="mt-16 grid grid-cols-2 gap-6 sm:grid-cols-4">
           {[
