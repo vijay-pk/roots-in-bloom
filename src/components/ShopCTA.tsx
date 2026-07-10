@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
+import { getRouteApi } from "@tanstack/react-router";
 const bottle = { url: "/bottle.png" };
 
+const route = getRouteApi("__root__");
+
 export default function ShopCTA() {
+  const loaderData = route.useLoaderData() as any;
+  const price = loaderData?.price || "299";
   return (
     <section id="shop" className="relative py-20 sm:py-32">
       <div className="mx-auto max-w-6xl px-6">
@@ -31,7 +36,7 @@ export default function ShopCTA() {
                   rel="noreferrer"
                   className="rounded-full bg-[color:var(--cream)] px-6 py-3.5 text-sm font-medium text-[color:var(--leaf)] shadow-soft transition-transform hover:scale-105 sm:px-8 sm:py-4"
                 >
-                  Buy on Amazon — ₹299
+                  Buy on Amazon — ₹{price}
                 </a>
                 <a
                   href="mailto:prakrithiroots@gmail.com"

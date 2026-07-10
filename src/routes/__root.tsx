@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { getAmazonPrice } from "../lib/amazonScraper";
 
 function NotFoundComponent() {
   return (
@@ -73,7 +74,11 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
+  loader: async () => {
+    const price = await getAmazonPrice();
+    return { price };
+  },
+  head: ({ loaderData }) => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -145,7 +150,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             "@type": "Offer",
             url: "https://www.amazon.in/Prakrithi-Roots-Herbal-Hair-Oil/dp/B0H74RD947",
             priceCurrency: "INR",
-            price: "299",
+            price: loaderData?.price || "299",
             availability: "https://schema.org/InStock",
           },
         }),
