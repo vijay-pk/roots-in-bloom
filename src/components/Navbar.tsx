@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 const links = [
-  { href: "#story", label: "Story" },
-  { href: "#ingredients", label: "Ingredients" },
-  { href: "#benefits", label: "Benefits" },
-  { href: "#reviews", label: "Reviews" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#story", label: "Story" },
+  { href: "/#ingredients", label: "Ingredients" },
+  { href: "/#benefits", label: "Benefits" },
+  { href: "/#reviews", label: "Reviews" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export default function Navbar() {
@@ -30,7 +30,7 @@ export default function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <a href="#top" className="flex items-center gap-2 group">
+        <a href="/" className="flex items-center gap-2 group">
           <span className="grid h-9 w-9 place-items-center rounded-full gradient-leaf shadow-glow transition-transform group-hover:scale-110">
             <svg viewBox="0 0 24 24" className="h-5 w-5 text-[color:var(--cream)]" fill="currentColor">
               <path d="M12 2c4 4 6 8 6 12a6 6 0 1 1-12 0c0-4 2-8 6-12z" />
