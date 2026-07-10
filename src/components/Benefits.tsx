@@ -25,6 +25,7 @@ export default function Benefits() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
+            loading="lazy"
           />
         </div>
 

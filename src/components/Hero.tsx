@@ -114,6 +114,7 @@ export default function Hero() {
               alt="Prakrithi Roots Herbal Hair Oil"
               className="relative z-10 h-[300px] w-auto object-contain sm:h-[420px] lg:h-[520px]"
               loading="eager"
+              fetchpriority="high"
             />
           </div>
         </motion.div>

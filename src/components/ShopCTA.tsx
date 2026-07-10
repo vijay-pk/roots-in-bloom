@@ -47,6 +47,7 @@ export default function ShopCTA() {
                 alt="Prakrithi Roots bottle"
                 className="h-[260px] w-auto object-contain animate-float-bottle sm:h-[400px]"
                 style={{ filter: "drop-shadow(0 30px 40px rgba(0,0,0,0.35))" }}
+                loading="lazy"
               />
             </div>
           </div>
