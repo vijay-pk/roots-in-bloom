@@ -16,7 +16,10 @@ function ContactPage() {
         <div className="glass p-8 rounded-2xl inline-block text-left">
           <h2 className="text-xl font-medium mb-4 text-[color:var(--leaf)]">Reach Out Directly</h2>
           <p className="mb-2"><strong>Email:</strong> hello@prakrithi-roots.shop</p>
-          <p><strong>Address:</strong> Kerala, India</p>
+          <p className="mb-4"><strong>Address:</strong> Kerala, India</p>
+          <a href="https://share.google/5xDUEK7Tp293UdhsM" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-[color:var(--leaf)] px-4 py-2 text-sm text-[color:var(--leaf)] transition hover:bg-[color:var(--leaf)] hover:text-[color:var(--cream)]">
+            View our Google Profile
+          </a>
         </div>
       </div>
     </PageLayout>

@@ -134,7 +134,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           image: "https://prakrithi-roots.shop/bottle.png",
           description:
             "100% natural Ayurvedic hair oil slow-infused with 12 herbs including Amla, Tulsi, Aloe Vera, Hibiscus and Bhringraj in pure wood-pressed coconut oil. Handcrafted in Kerala.",
-          brand: { "@type": "Brand", name: "Prakrithi Roots" },
+          brand: { 
+            "@type": "Brand", 
+            name: "Prakrithi Roots",
+            sameAs: "https://share.google/5xDUEK7Tp293UdhsM"
+          },
           category: "Hair Oil",
           countryOfOrigin: "India",
           offers: {
