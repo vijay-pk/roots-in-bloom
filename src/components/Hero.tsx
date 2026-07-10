@@ -43,9 +43,8 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.15 }}
             className="mt-5 text-4xl leading-[1.05] text-balance sm:text-6xl lg:text-7xl"
           >
-            Nature's
-            <span className="block italic text-[color:var(--leaf)]">healing power,</span>
-            bottled with love.
+            Prakrithi Roots
+            <span className="block italic text-[color:var(--leaf)]">Herbal Hair Oil</span>
           </motion.h1>
 
           <motion.p
@@ -112,7 +111,7 @@ export default function Hero() {
           >
             <img
               src={bottle.url}
-              alt="Prakrithi Roots Herbal Hair Oil bottle"
+              alt="Prakrithi Roots Herbal Hair Oil"
               className="relative z-10 h-[300px] w-auto object-contain sm:h-[420px] lg:h-[520px]"
               loading="eager"
             />
