@@ -51,7 +51,7 @@ export default function Navbar() {
           ))}
         </ul>
         <a
-          href="https://amzn.in/d/03o8vO5r"
+          href="https://www.amazon.in/Prakrithi-Roots-Herbal-Hair-Oil/dp/B0H74RD947"
           target="_blank"
           rel="noreferrer"
           className="rounded-full gradient-leaf px-5 py-2 text-sm font-medium text-[color:var(--cream)] shadow-soft transition-transform hover:scale-105"

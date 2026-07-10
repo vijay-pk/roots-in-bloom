@@ -46,7 +46,7 @@ export default function Footer() {
               <li>Loventra, Calicut, Kerala</li>
               <li><a href="mailto:prakrithiroots@gmail.com" className="hover:text-white">prakrithiroots@gmail.com</a></li>
               <li>
-                <a href="https://amzn.in/d/03o8vO5r" target="_blank" rel="noreferrer" className="hover:text-white">
+                <a href="https://www.amazon.in/Prakrithi-Roots-Herbal-Hair-Oil/dp/B0H74RD947" target="_blank" rel="noreferrer" className="hover:text-white">
                   Buy on Amazon →
                 </a>
               </li>

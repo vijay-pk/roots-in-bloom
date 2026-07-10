@@ -139,7 +139,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           countryOfOrigin: "India",
           offers: {
             "@type": "Offer",
-            url: "https://amzn.in/d/03o8vO5r",
+            url: "https://www.amazon.in/Prakrithi-Roots-Herbal-Hair-Oil/dp/B0H74RD947",
             priceCurrency: "INR",
             price: "299",
             availability: "https://schema.org/InStock",

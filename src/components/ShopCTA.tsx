@@ -26,7 +26,7 @@ export default function ShopCTA() {
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <a
-                  href="https://amzn.in/d/03o8vO5r"
+                  href="https://www.amazon.in/Prakrithi-Roots-Herbal-Hair-Oil/dp/B0H74RD947"
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-full bg-[color:var(--cream)] px-6 py-3.5 text-sm font-medium text-[color:var(--leaf)] shadow-soft transition-transform hover:scale-105 sm:px-8 sm:py-4"

@@ -64,7 +64,7 @@ export default function Hero() {
             className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start"
           >
             <a
-              href="https://amzn.in/d/03o8vO5r"
+              href="https://www.amazon.in/Prakrithi-Roots-Herbal-Hair-Oil/dp/B0H74RD947"
               target="_blank"
               rel="noreferrer"
               className="group relative overflow-hidden rounded-full gradient-leaf px-7 py-3.5 text-sm font-medium text-[color:var(--cream)] shadow-bottle transition-transform hover:scale-105 sm:px-8 sm:py-4"
