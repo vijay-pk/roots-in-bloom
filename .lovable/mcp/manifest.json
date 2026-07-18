@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "sdk_version": "0.23.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "prakrithi-roots-mcp",
+      "version": "0.1.0",
+      "title": "Prakrithi Roots MCP"
+    },
+    "tools": [
+      {
+        "name": "get_product",
+        "title": "Get product",
+        "description": "Return public details about the Prakrithi Roots Ayurvedic Herbal Hair Oil, including name, price in INR, size, description, key benefits, and the Amazon India buy link.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_ingredients",
+        "title": "List ingredients",
+        "description": "List all 12 Ayurvedic herbs used in Prakrithi Roots Herbal Hair Oil, with their traditional name/role and the benefit each brings to hair and scalp.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_faqs",
+        "title": "List FAQs",
+        "description": "Return the public FAQs for Prakrithi Roots Herbal Hair Oil — usage, suitability, ingredients, timeline, and origin.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
