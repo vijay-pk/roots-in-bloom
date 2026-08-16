@@ -109,8 +109,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Looking for the best hair oil? Prakrithi Roots is a 100% natural herbal hair oil for men and women. Handcrafted in Kerala for superior hair growth and health.",
       },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5a36b7d0-ff1d-4711-beb6-2c3ef75b2ea9/id-preview-fb4b32ae--cf78b4cd-93a7-4401-9ac0-eb5b554d8685.lovable.app-1783140056942.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5a36b7d0-ff1d-4711-beb6-2c3ef75b2ea9/id-preview-fb4b32ae--cf78b4cd-93a7-4401-9ac0-eb5b554d8685.lovable.app-1783140056942.png" },
+      { property: "og:image", content: "https://prakrithi-roots.shop/logo.png" },
+      { name: "twitter:image", content: "https://prakrithi-roots.shop/logo.png" },
     ],
     scripts: [
       {
@@ -154,7 +154,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/icon.png", type: "image/png" },
+      { rel: "icon", href: "/logo.png", type: "image/png" },
       { rel: "canonical", href: "https://prakrithi-roots.shop/" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
