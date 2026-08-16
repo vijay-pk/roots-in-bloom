@@ -35,7 +35,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-[color:var(--leaf)]"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[color:var(--leaf)]" />
-            100% Natural Ayurvedic
+            The Best Herbal Hair Oil
           </motion.div>
 
           <motion.h1
@@ -54,7 +54,7 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.35 }}
             className="mx-auto mt-6 max-w-lg text-lg text-muted-foreground lg:mx-0"
           >
-            Handcrafted herbal hair oil from the hills of Kerala — Amla, Tulsi, Aloe Vera,
+            The best hair oil for men and women. Handcrafted from the hills of Kerala — Amla, Tulsi, Aloe Vera,
             Hibiscus & Bhringraj slow-infused in pure coconut oil.
           </motion.p>
 
@@ -115,7 +115,7 @@ export default function Hero() {
               alt="Prakrithi Roots Herbal Hair Oil"
               className="relative z-10 h-[300px] w-auto object-contain sm:h-[420px] lg:h-[520px]"
               loading="eager"
-              fetchpriority="high"
+              fetchPriority="high"
             />
           </div>
         </motion.div>

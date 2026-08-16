@@ -78,36 +78,36 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Prakrithi Roots — Natural Ayurvedic Hair Oil | Buy on Amazon" },
+      { title: "Best Herbal Hair Oil for Men & Women | Prakrithi Roots" },
       {
         name: "description",
         content:
-          "Prakrithi Roots is a 100% natural Ayurvedic hair oil handcrafted in Kerala with Amla, Tulsi, Aloe Vera, Hibiscus & Bhringraj. Best natural hair oil for hair growth — buy on Amazon India.",
+          "Looking for the best hair oil? Prakrithi Roots is a 100% natural herbal hair oil for men and women. Handcrafted in Kerala for superior hair growth and health.",
       },
       {
         name: "keywords",
         content:
-          "prakrithi roots, prakrithi roots hair oil, natural hair oil, best hair oil, hair oil in amazon, ayurvedic hair oil, herbal hair oil, hair growth oil, hair fall oil, hair oil kerala, organic hair oil, best herbal hair oil for hair fall, best ayurvedic hair oil in india, hair growth oil for women, hair growth oil for men, herbal hair oil for dandruff, natural hair oil for dry hair, amla hair oil, bhringraj oil, hibiscus hair oil",
+          "hair oil, herbal hair oil, hair oil for men, hair oil for women, best hair oil, prakrithi roots, prakrithi roots hair oil, natural hair oil, hair oil in amazon, ayurvedic hair oil, hair growth oil, hair fall oil, hair oil kerala, organic hair oil, best herbal hair oil for hair fall, best ayurvedic hair oil in india, herbal hair oil for dandruff, natural hair oil for dry hair, amla hair oil, bhringraj oil, hibiscus hair oil",
       },
       { name: "author", content: "Prakrithi Roots" },
       { name: "robots", content: "index, follow" },
       { name: "theme-color", content: "#2E5E3B" },
-      { property: "og:title", content: "Prakrithi Roots — Natural Ayurvedic Hair Oil | Buy on Amazon" },
+      { property: "og:title", content: "Best Herbal Hair Oil for Men & Women | Prakrithi Roots" },
       {
         property: "og:description",
         content:
-          "Handcrafted Ayurvedic hair oil slow-infused with 12 herbs in pure coconut oil. 100% natural, made in Kerala. Available on Amazon India.",
+          "Looking for the best hair oil? Prakrithi Roots is a 100% natural herbal hair oil for men and women. Handcrafted in Kerala for superior hair growth and health.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://prakrithi-roots.shop" },
       { property: "og:site_name", content: "Prakrithi Roots" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Prakrithi Roots — Natural Ayurvedic Hair Oil | Buy on Amazon" },
+      { name: "twitter:title", content: "Best Herbal Hair Oil for Men & Women | Prakrithi Roots" },
       {
         name: "twitter:description",
         content:
-          "Handcrafted Ayurvedic hair oil slow-infused with 12 herbs in pure coconut oil. 100% natural, made in Kerala.",
+          "Looking for the best hair oil? Prakrithi Roots is a 100% natural herbal hair oil for men and women. Handcrafted in Kerala for superior hair growth and health.",
       },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5a36b7d0-ff1d-4711-beb6-2c3ef75b2ea9/id-preview-fb4b32ae--cf78b4cd-93a7-4401-9ac0-eb5b554d8685.lovable.app-1783140056942.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5a36b7d0-ff1d-4711-beb6-2c3ef75b2ea9/id-preview-fb4b32ae--cf78b4cd-93a7-4401-9ac0-eb5b554d8685.lovable.app-1783140056942.png" },
@@ -134,7 +134,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           name: "Prakrithi Roots Ayurvedic Herbal Hair Oil",
           image: "https://prakrithi-roots.shop/bottle.png",
           description:
-            "100% natural Ayurvedic hair oil slow-infused with 12 herbs including Amla, Tulsi, Aloe Vera, Hibiscus and Bhringraj in pure wood-pressed coconut oil. Handcrafted in Kerala.",
+            "Looking for the best hair oil? Prakrithi Roots is a 100% natural herbal hair oil for men and women. Handcrafted in Kerala for superior hair growth and health.",
           brand: { 
             "@type": "Brand", 
             name: "Prakrithi Roots",
