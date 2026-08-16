@@ -12,17 +12,22 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as BenefitsRouteImport } from './routes/benefits'
+import { Route as BlogRouteImport } from './routes/blog'
 import { Route as BlogsRouteImport } from './routes/blogs'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as HowToUseRouteImport } from './routes/how-to-use'
 import { Route as IngredientsRouteImport } from './routes/ingredients'
 import { Route as McpRouteImport } from './routes/mcp'
+import { Route as OurStoryRouteImport } from './routes/our-story'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as ProductRouteImport } from './routes/product'
 import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
+import { Route as ResultsRouteImport } from './routes/results'
 import { Route as ShippingPolicyRouteImport } from './routes/shipping-policy'
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 
 const IndexRoute = IndexRouteImport.update({
@@ -38,6 +43,11 @@ const AboutRoute = AboutRouteImport.update({
 const BenefitsRoute = BenefitsRouteImport.update({
   id: '/benefits',
   path: '/benefits',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogsRoute = BlogsRouteImport.update({
@@ -70,14 +80,29 @@ const McpRoute = McpRouteImport.update({
   path: '/mcp',
   getParentRoute: () => rootRouteImport,
 } as any)
+const OurStoryRoute = OurStoryRouteImport.update({
+  id: '/our-story',
+  path: '/our-story',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   id: '/privacy-policy',
   path: '/privacy-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProductRoute = ProductRouteImport.update({
+  id: '/product',
+  path: '/product',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RefundPolicyRoute = RefundPolicyRouteImport.update({
   id: '/refund-policy',
   path: '/refund-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResultsRoute = ResultsRouteImport.update({
+  id: '/results',
+  path: '/results',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ShippingPolicyRoute = ShippingPolicyRouteImport.update({
@@ -97,6 +122,11 @@ const Char91DotwellKnownChar93OauthProtectedResourceRoute =
     path: '/.well-known/oauth-protected-resource',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => BlogRoute,
+} as any)
 const Char91DotmcpChar93InvokeToolToolRoute =
   Char91DotmcpChar93InvokeToolToolRouteImport.update({
     id: '/.mcp/invoke-tool/$tool',
@@ -108,34 +138,44 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/benefits': typeof BenefitsRoute
+  '/blog': typeof BlogRouteWithChildren
   '/blogs': typeof BlogsRoute
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/how-to-use': typeof HowToUseRoute
   '/ingredients': typeof IngredientsRoute
   '/mcp': typeof McpRoute
+  '/our-story': typeof OurStoryRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/product': typeof ProductRoute
   '/refund-policy': typeof RefundPolicyRoute
+  '/results': typeof ResultsRoute
   '/shipping-policy': typeof ShippingPolicyRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/benefits': typeof BenefitsRoute
+  '/blog': typeof BlogRouteWithChildren
   '/blogs': typeof BlogsRoute
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/how-to-use': typeof HowToUseRoute
   '/ingredients': typeof IngredientsRoute
   '/mcp': typeof McpRoute
+  '/our-story': typeof OurStoryRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/product': typeof ProductRoute
   '/refund-policy': typeof RefundPolicyRoute
+  '/results': typeof ResultsRoute
   '/shipping-policy': typeof ShippingPolicyRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 export interface FileRoutesById {
@@ -143,17 +183,22 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/benefits': typeof BenefitsRoute
+  '/blog': typeof BlogRouteWithChildren
   '/blogs': typeof BlogsRoute
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/how-to-use': typeof HowToUseRoute
   '/ingredients': typeof IngredientsRoute
   '/mcp': typeof McpRoute
+  '/our-story': typeof OurStoryRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/product': typeof ProductRoute
   '/refund-policy': typeof RefundPolicyRoute
+  '/results': typeof ResultsRoute
   '/shipping-policy': typeof ShippingPolicyRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 export interface FileRouteTypes {
@@ -162,51 +207,66 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/benefits'
+    | '/blog'
     | '/blogs'
     | '/contact'
     | '/faq'
     | '/how-to-use'
     | '/ingredients'
     | '/mcp'
+    | '/our-story'
     | '/privacy-policy'
+    | '/product'
     | '/refund-policy'
+    | '/results'
     | '/shipping-policy'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
+    | '/blog/$slug'
     | '/.mcp/invoke-tool/$tool'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/benefits'
+    | '/blog'
     | '/blogs'
     | '/contact'
     | '/faq'
     | '/how-to-use'
     | '/ingredients'
     | '/mcp'
+    | '/our-story'
     | '/privacy-policy'
+    | '/product'
     | '/refund-policy'
+    | '/results'
     | '/shipping-policy'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
+    | '/blog/$slug'
     | '/.mcp/invoke-tool/$tool'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/benefits'
+    | '/blog'
     | '/blogs'
     | '/contact'
     | '/faq'
     | '/how-to-use'
     | '/ingredients'
     | '/mcp'
+    | '/our-story'
     | '/privacy-policy'
+    | '/product'
     | '/refund-policy'
+    | '/results'
     | '/shipping-policy'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
+    | '/blog/$slug'
     | '/.mcp/invoke-tool/$tool'
   fileRoutesById: FileRoutesById
 }
@@ -214,14 +274,18 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   BenefitsRoute: typeof BenefitsRoute
+  BlogRoute: typeof BlogRouteWithChildren
   BlogsRoute: typeof BlogsRoute
   ContactRoute: typeof ContactRoute
   FaqRoute: typeof FaqRoute
   HowToUseRoute: typeof HowToUseRoute
   IngredientsRoute: typeof IngredientsRoute
   McpRoute: typeof McpRoute
+  OurStoryRoute: typeof OurStoryRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
+  ProductRoute: typeof ProductRoute
   RefundPolicyRoute: typeof RefundPolicyRoute
+  ResultsRoute: typeof ResultsRoute
   ShippingPolicyRoute: typeof ShippingPolicyRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -249,6 +313,13 @@ declare module '@tanstack/react-router' {
       path: '/benefits'
       fullPath: '/benefits'
       preLoaderRoute: typeof BenefitsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blogs': {
@@ -293,6 +364,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof McpRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/our-story': {
+      id: '/our-story'
+      path: '/our-story'
+      fullPath: '/our-story'
+      preLoaderRoute: typeof OurStoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/privacy-policy': {
       id: '/privacy-policy'
       path: '/privacy-policy'
@@ -300,11 +378,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivacyPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/product': {
+      id: '/product'
+      path: '/product'
+      fullPath: '/product'
+      preLoaderRoute: typeof ProductRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/refund-policy': {
       id: '/refund-policy'
       path: '/refund-policy'
       fullPath: '/refund-policy'
       preLoaderRoute: typeof RefundPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/results': {
+      id: '/results'
+      path: '/results'
+      fullPath: '/results'
+      preLoaderRoute: typeof ResultsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/shipping-policy': {
@@ -328,6 +420,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof BlogRoute
+    }
     '/.mcp/invoke-tool/$tool': {
       id: '/.mcp/invoke-tool/$tool'
       path: '/.mcp/invoke-tool/$tool'
@@ -338,18 +437,32 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface BlogRouteChildren {
+  BlogSlugRoute: typeof BlogSlugRoute
+}
+
+const BlogRouteChildren: BlogRouteChildren = {
+  BlogSlugRoute: BlogSlugRoute,
+}
+
+const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   BenefitsRoute: BenefitsRoute,
+  BlogRoute: BlogRouteWithChildren,
   BlogsRoute: BlogsRoute,
   ContactRoute: ContactRoute,
   FaqRoute: FaqRoute,
   HowToUseRoute: HowToUseRoute,
   IngredientsRoute: IngredientsRoute,
   McpRoute: McpRoute,
+  OurStoryRoute: OurStoryRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
+  ProductRoute: ProductRoute,
   RefundPolicyRoute: RefundPolicyRoute,
+  ResultsRoute: ResultsRoute,
   ShippingPolicyRoute: ShippingPolicyRoute,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:

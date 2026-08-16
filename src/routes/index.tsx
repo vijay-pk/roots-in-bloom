@@ -5,6 +5,7 @@ import Story from "@/components/Story";
 import Ingredients from "@/components/Ingredients";
 import Benefits from "@/components/Benefits";
 import Testimonials from "@/components/Testimonials";
+import ResultsSection from "@/components/ResultsSection";
 import FAQ from "@/components/FAQ";
 import ShopCTA from "@/components/ShopCTA";
 import Footer from "@/components/Footer";
@@ -21,6 +22,7 @@ function Index() {
       <Story />
       <Ingredients />
       <Benefits />
+      <ResultsSection />
       <Testimonials />
       <FAQ />
       <ShopCTA />

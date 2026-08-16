@@ -46,7 +46,7 @@ export default function Story() {
           className="mt-10 flex justify-center"
         >
           <Link
-            to="/about"
+            to="/our-story"
             className="inline-flex items-center gap-2 rounded-full border border-[color:var(--leaf)] px-8 py-3.5 text-sm font-medium text-[color:var(--leaf)] transition hover:bg-[color:var(--leaf)] hover:text-[color:var(--cream)] shadow-sm"
           >
             Read Our Founder's Story
