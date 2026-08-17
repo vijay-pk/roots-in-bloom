@@ -31,7 +31,7 @@ export const Route = createFileRoute("/product")({
       {
         name: "description",
         content:
-          "Buy Prakrithi Roots Herbal Hair Oil handcrafted in Kerala. Slow-infused with 12 Ayurvedic herbs in pure cold-pressed coconut oil. Reduces hair fall & promotes natural hair growth.",
+          "Discover Prakrithi Roots Herbal Hair Oil, made with 12 traditional herbs infused in wood-pressed coconut oil. Explore its ingredients, benefits and how to use it.",
       },
       {
         property: "og:title",
