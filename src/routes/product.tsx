@@ -27,7 +27,7 @@ import {
 export const Route = createFileRoute("/product")({
   head: () => ({
     meta: [
-      { title: "Prakrithi Roots Ayurvedic Herbal Hair Oil (100ml) | 100% Natural" },
+      { title: "Prakrithi Roots Herbal Hair Oil | Natural Hair Oil from Kerala" },
       {
         name: "description",
         content:
