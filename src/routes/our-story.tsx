@@ -68,7 +68,7 @@ function OurStoryPage() {
           <p>
             Every bottle is prepared with care, inspired by traditional herbal wisdom and created with the same dedication that began in my own home. Thank you for being part of our journey.
           </p>
-          
+
           <div className="mt-12 rounded-[2rem] bg-[color:var(--leaf)] p-8 text-center text-[color:var(--cream)] shadow-bottle">
             <h3 className="text-2xl font-medium italic sm:text-3xl">
               "Rooted in Nature, Powered by Ayurveda."

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { PRODUCT_PRICE } from "../lib/config";
-const bottle = { url: "/bottle.png" };
+const bottle = { url: "/prakrithi-roots-herbal-hair-oil-bottle.webp" };
 
 export default function ShopCTA() {
   return (

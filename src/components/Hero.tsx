@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect } from "react";
-const bottle = { url: "/bottle.png" };
+const bottle = { url: "/prakrithi-roots-herbal-hair-oil-bottle.webp" };
 import FloatingLeaves from "./FloatingLeaves";
 import { PRODUCT_PRICE } from "../lib/config";
 

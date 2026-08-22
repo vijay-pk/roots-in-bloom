@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "@tanstack/react-router";
-const bottle = { url: "/bottle.png" };
+const bottle = { url: "/prakrithi-roots-herbal-hair-oil-bottle.webp" };
 
 const benefits = [
   { title: "Hair Growth Support", desc: "Awakens dormant follicles with Bhringraj + Amla." },

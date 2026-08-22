@@ -4,6 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  useLocation,
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
@@ -132,11 +133,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@context": "https://schema.org",
           "@type": "Product",
           name: "Prakrithi Roots Ayurvedic Herbal Hair Oil",
-          image: "https://prakrithi-roots.shop/bottle.png",
+          image: "https://prakrithi-roots.shop/prakrithi-roots-herbal-hair-oil-bottle.webp",
           description:
             "Looking for the best hair oil? Prakrithi Roots is a 100% natural herbal hair oil for men and women. Handcrafted in Kerala for superior hair growth and health.",
-          brand: { 
-            "@type": "Brand", 
+          brand: {
+            "@type": "Brand",
             name: "Prakrithi Roots",
             sameAs: "https://share.google/5xDUEK7Tp293UdhsM"
           },
@@ -155,7 +156,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/logo.png", type: "image/png" },
-      { rel: "canonical", href: "https://prakrithi-roots.shop/" },
+
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -184,11 +185,18 @@ function RootShell({ children }: { children: ReactNode }) {
   );
 }
 
+function DynamicCanonical() {
+  const location = useLocation();
+  const canonical = `https://prakrithi-roots.shop${location.pathname === "/" ? "/" : location.pathname.replace(/\/$/, "")}`;
+  return <link rel="canonical" href={canonical} />;
+}
+
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
     <QueryClientProvider client={queryClient}>
+      <DynamicCanonical />
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
     </QueryClientProvider>

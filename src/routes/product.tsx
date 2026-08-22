@@ -82,16 +82,16 @@ const highlights = [
 
 const ingredients = [
   { name: "Wood-Pressed Coconut Oil", tag: "The Base", desc: "Deeply nourishes scalp and strengthens hair from root to tip.", emoji: "🥥" },
-  { name: "Amla", tag: "Indian Gooseberry", desc: "Rich in vitamin C — promotes hair growth and prevents premature greying.", emoji: "🫒" },
+  { name: "Amla", tag: "Indian Gooseberry", desc: "Rich in vitamin C — promotes hair growth and prevents premature greying.", emoji: "🫒", link: "/blog/amla-benefits-for-hair" },
   { name: "Indigo", tag: "Neela Amari", desc: "Naturally enhances hair color and supports scalp health.", emoji: "🪴" },
-  { name: "Brahmi", tag: "Memory Herb", desc: "Strengthens hair roots and helps reduce hair fall and stress-related damage.", emoji: "🌿" },
+  { name: "Brahmi", tag: "Memory Herb", desc: "Strengthens hair roots and helps reduce hair fall and stress-related damage.", emoji: "🌿", link: "/blog/brahmi-benefits-for-hair" },
   { name: "Henna", tag: "Mehendi", desc: "Conditions the hair, adds natural shine, and improves texture.", emoji: "🍃" },
-  { name: "Hibiscus", tag: "Japa Pushpa", desc: "Stimulates hair growth and helps prevent dandruff and hair thinning.", emoji: "🌺" },
+  { name: "Hibiscus", tag: "Japa Pushpa", desc: "Stimulates hair growth and helps prevent dandruff and hair thinning.", emoji: "🌺", link: "/blog/hibiscus-benefits-for-hair" },
   { name: "Tulsi", tag: "Holy Basil", desc: "Purifies the scalp and reduces itching and dandruff.", emoji: "🌱" },
-  { name: "Bhringraj", tag: "King of Herbs", desc: "The legendary Ayurvedic tonic — promotes thick, healthy growth.", emoji: "🍀" },
+  { name: "Bhringraj", tag: "King of Herbs", desc: "The legendary Ayurvedic tonic — promotes thick, healthy growth.", emoji: "🍀", link: "/blog/bhringraj-benefits-for-hair" },
   { name: "Aloe Vera", tag: "Ghritakumari", desc: "Soothes the scalp and hydrates dry, damaged hair.", emoji: "🌵" },
   { name: "Little Ironweed", tag: "Sahadevi", desc: "Supports scalp health and helps in reducing hair loss.", emoji: "🌾" },
-  { name: "Curry Leaves", tag: "Karivepaku", desc: "Strengthens hair follicles and delays premature greying.", emoji: "🌿" },
+  { name: "Curry Leaves", tag: "Karivepaku", desc: "Strengthens hair follicles and delays premature greying.", emoji: "🌿", link: "/blog/curry-leaves-for-hair" },
   { name: "Vetiver", tag: "Khus", desc: "Cools and calms the scalp while improving overall hair vitality.", emoji: "🌾" },
 ];
 
@@ -205,8 +205,8 @@ function ProductPage() {
             <div className="absolute -bottom-16 -right-16 h-64 w-64 rounded-full bg-[oklch(0.85_0.14_148)]/15 blur-3xl" />
             <div className="relative z-10 flex flex-col items-center">
               <motion.img
-                src="/bottle.png"
-                alt="Prakrithi Roots Ayurvedic Herbal Hair Oil 100ml"
+                src="/prakrithi-roots-herbal-hair-oil-bottle.webp"
+                alt="Prakrithi Roots Herbal Hair Oil bottle, 100ml"
                 className="h-[360px] sm:h-[460px] w-auto object-contain animate-float-bottle"
                 style={{ filter: "drop-shadow(0 30px 40px rgba(0,0,0,0.25))" }}
               />
@@ -247,7 +247,7 @@ function ProductPage() {
               </span>
             </div>
             <p className="mt-6 text-base sm:text-lg leading-relaxed text-muted-foreground">
-              A time-honored blend of 12 Ayurvedic botanicals slow-cooked in pure coconut oil over gentle heat. Formulated to target hair thinning, nourish sensitive scalps, and promote strong root revitalization.
+              Prakrithi Roots Herbal Hair Oil is a natural herbal hair oil made with 12 carefully selected herbs infused in wood-pressed coconut oil. Crafted in Kerala, this traditional-inspired hair oil is designed to support a simple, nourishing hair-care routine.
             </p>
             <ul className="mt-6 space-y-2.5">
               {highlights.map((item, idx) => (
@@ -377,7 +377,15 @@ function ProductPage() {
                 </div>
                 <div className="min-w-0">
                   <p className="text-[10px] uppercase tracking-widest text-muted-foreground">{it.tag}</p>
-                  <h3 className="text-base font-semibold text-foreground mt-0.5">{it.name}</h3>
+                  <h3 className="text-base font-semibold text-foreground mt-0.5">
+                    {it.link ? (
+                      <Link to={it.link} className="hover:text-[color:var(--leaf)] transition underline decoration-[color:var(--leaf)]/30 underline-offset-4">
+                        {it.name}
+                      </Link>
+                    ) : (
+                      it.name
+                    )}
+                  </h3>
                   <p className="text-xs text-muted-foreground leading-relaxed mt-1">{it.desc}</p>
                 </div>
               </motion.div>
@@ -388,7 +396,7 @@ function ProductPage() {
               to="/ingredients"
               className="inline-flex items-center gap-2 rounded-full border border-[color:var(--leaf)] px-8 py-3.5 text-sm font-medium text-[color:var(--leaf)] transition hover:bg-[color:var(--leaf)] hover:text-[color:var(--cream)] shadow-sm"
             >
-              Learn More About Our Ingredients
+              Explore all 12 ingredients →
             </Link>
           </div>
         </section>
@@ -428,7 +436,7 @@ function ProductPage() {
               to="/benefits"
               className="inline-flex items-center gap-2 rounded-full border border-[color:var(--leaf)] px-8 py-3.5 text-sm font-medium text-[color:var(--leaf)] transition hover:bg-[color:var(--leaf)] hover:text-[color:var(--cream)] shadow-sm"
             >
-              See All Benefits
+              Explore the benefits of Prakrithi Roots Herbal Hair Oil →
             </Link>
           </div>
         </section>
@@ -516,7 +524,7 @@ function ProductPage() {
               to="/how-to-use"
               className="inline-flex items-center gap-2 rounded-full border border-[color:var(--leaf)] px-8 py-3.5 text-sm font-medium text-[color:var(--leaf)] transition hover:bg-[color:var(--leaf)] hover:text-[color:var(--cream)] shadow-sm"
             >
-              Read Full Usage Guide
+              Read the complete guide to using herbal hair oil →
             </Link>
           </div>
         </section>
@@ -602,7 +610,7 @@ function ProductPage() {
               to="/faq"
               className="inline-flex items-center gap-2 rounded-full border border-[color:var(--leaf)] px-8 py-3.5 text-sm font-medium text-[color:var(--leaf)] transition hover:bg-[color:var(--leaf)] hover:text-[color:var(--cream)] shadow-sm"
             >
-              Read All FAQs
+              View all frequently asked questions →
             </Link>
           </div>
         </section>
