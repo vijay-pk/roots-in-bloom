@@ -12,8 +12,6 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { PRODUCT_PRICE } from "../lib/config";
-
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -126,31 +124,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
           gtag('config', 'G-MBY64RY3LF');
         `,
-      },
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Product",
-          name: "Prakrithi Roots Ayurvedic Herbal Hair Oil",
-          image: "https://prakrithi-roots.shop/prakrithi-roots-herbal-hair-oil-bottle.webp",
-          description:
-            "Looking for the best hair oil? Prakrithi Roots is a 100% natural herbal hair oil for men and women. Handcrafted in Kerala for superior hair growth and health.",
-          brand: {
-            "@type": "Brand",
-            name: "Prakrithi Roots",
-            sameAs: "https://share.google/5xDUEK7Tp293UdhsM"
-          },
-          category: "Hair Oil",
-          countryOfOrigin: "India",
-          offers: {
-            "@type": "Offer",
-            url: "https://www.amazon.in/Prakrithi-Roots-Herbal-Hair-Oil/dp/B0H74RD947",
-            priceCurrency: "INR",
-            price: PRODUCT_PRICE,
-            availability: "https://schema.org/InStock",
-          },
-        }),
       },
     ],
     links: [
