@@ -203,7 +203,7 @@ function BlogPostPage() {
                     {relPost.category}
                   </span>
                   <h4 className="text-lg font-medium text-foreground line-clamp-2">
-                    <Link to={`/blog/${relPost.slug}`} className="hover:text-[color:var(--leaf)] transition">
+                    <Link to="/blog/$slug" params={{ slug: relPost.slug }} className="hover:text-[color:var(--leaf)] transition">
                       {relPost.title}
                     </Link>
                   </h4>
@@ -214,7 +214,8 @@ function BlogPostPage() {
                 <div className="mt-4 pt-3 border-t border-border/60 flex items-center justify-between">
                   <span className="text-xs text-muted-foreground">{relPost.readTime}</span>
                   <Link
-                    to={`/blog/${relPost.slug}`}
+                    to="/blog/$slug"
+                    params={{ slug: relPost.slug }}
                     className="text-xs font-semibold text-[color:var(--leaf)] inline-flex items-center gap-1 hover:translate-x-0.5 transition-transform"
                   >
                     Read Article <ArrowRight className="h-3 w-3" />
