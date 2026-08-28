@@ -73,7 +73,7 @@ function BlogListingPage() {
               </div>
 
               <h2 className="text-2xl sm:text-4xl font-medium text-foreground group-hover:text-[color:var(--leaf)] transition">
-                <Link to={`/blog/${featuredPost.slug}`}>
+                <Link to="/blog/$slug" params={{ slug: featuredPost.slug }}>
                   {featuredPost.title}
                 </Link>
               </h2>
@@ -84,7 +84,8 @@ function BlogListingPage() {
 
               <div className="mt-6 flex items-center gap-4">
                 <Link
-                  to={`/blog/${featuredPost.slug}`}
+                  to="/blog/$slug"
+                  params={{ slug: featuredPost.slug }}
                   className="inline-flex items-center gap-2 rounded-full gradient-leaf px-6 py-3 text-sm font-medium text-[color:var(--cream)] shadow-sm transition hover:scale-105"
                 >
                   <span>Read Full Article</span>
@@ -118,7 +119,7 @@ function BlogListingPage() {
                 </div>
 
                 <h3 className="text-xl font-medium text-foreground group-hover:text-[color:var(--leaf)] transition line-clamp-2 leading-snug">
-                  <Link to={`/blog/${post.slug}`}>
+                  <Link to="/blog/$slug" params={{ slug: post.slug }}>
                     {post.title}
                   </Link>
                 </h3>
@@ -131,7 +132,8 @@ function BlogListingPage() {
               <div className="mt-6 pt-4 border-t border-border/60 flex items-center justify-between">
                 <span className="text-xs text-muted-foreground">{post.date}</span>
                 <Link
-                  to={`/blog/${post.slug}`}
+                  to="/blog/$slug"
+                  params={{ slug: post.slug }}
                   className="inline-flex items-center gap-1.5 text-xs font-semibold text-[color:var(--leaf)] group-hover:translate-x-1 transition-transform"
                 >
                   <span>Read More</span>
