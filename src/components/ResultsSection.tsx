@@ -54,6 +54,24 @@ const RESULTS: ResultItem[] = [
       "Deeply moisturized scalp and natural healthy shine",
     ],
   },
+  {
+    id: "person-3",
+    name: "Customer Transformation",
+    location: "India",
+    title: "Curly Hair Definition & Bounce Revival",
+    concern: "Frizzy, Undefined Curls & Dryness",
+    duration: "8-12 Weeks Regular Application",
+    rating: 5,
+    imageSrc: "/results/person-3.png",
+    alt: "Before and After comparison showing improved curl definition, reduced frizz, and healthier hair texture",
+    story:
+      "Dull, frizzy curls lacking definition and bounce. After consistent application of our slow-infused Ayurvedic herbal oil, the natural curl pattern was revived with beautifully defined, hydrated waves and noticeably reduced frizz from root to tip.",
+    highlights: [
+      "Beautifully defined, bouncy curl pattern restored",
+      "Dramatic reduction in frizz and dryness",
+      "Healthier, shinier hair with natural volume",
+    ],
+  },
 ];
 
 export default function ResultsSection() {
@@ -78,7 +96,7 @@ export default function ResultsSection() {
         </div>
 
         {/* 2 Persons Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {RESULTS.map((item) => (
             <div
               key={item.id}
