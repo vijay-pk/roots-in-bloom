@@ -15,6 +15,7 @@ interface ResultItem {
   alt: string;
   story: string;
   highlights: string[];
+  caption?: string;
 }
 
 const RESULTS: ResultItem[] = [
@@ -60,7 +61,8 @@ const RESULTS: ResultItem[] = [
     location: "India",
     title: "Curly Hair Definition & Bounce Revival",
     concern: "Frizzy, Undefined Curls & Dryness",
-    duration: "8-12 Weeks Regular Application",
+    duration: "2 Weeks Regular Application",
+    caption: "Result of 2 weeks",
     rating: 5,
     imageSrc: "/results/person-3.png",
     alt: "Before and After comparison showing improved curl definition, reduced frizz, and healthier hair texture",
@@ -151,6 +153,13 @@ export default function ResultsSection() {
                     </div>
                   </div>
                 </div>
+
+                {/* Optional Caption */}
+                {item.caption && (
+                  <p className="text-center text-xs sm:text-sm font-medium text-[color:var(--leaf)] -mt-3 mb-4 italic">
+                    ✦ {item.caption}
+                  </p>
+                )}
 
                 {/* Case Story Details */}
                 <div className="space-y-4">
